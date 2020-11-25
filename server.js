@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const requireDir = require('require-dir');
 
 // Iniciando o App
 const app = express();
@@ -10,7 +11,7 @@ mongoose.connect(
  { useUnifiedTopology: true, useNewUrlParser:true });
 
 // Registro do MOdel Product
-require('./src/models/Product');
+requireDir('./src/models');
 
 // Primeira rota
 app.get('/',(req, res) => {
