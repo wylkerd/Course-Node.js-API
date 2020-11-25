@@ -13,9 +13,17 @@ mongoose.connect(
 // Registro do MOdel Product
 requireDir('./src/models');
 
+const Product = mongoose.model('Product');
+
 // Primeira rota
 app.get('/',(req, res) => {
-   res.send('Hello wylkerd');
+   Product.create({ 
+      title: 'React Native',
+      description: 'Build native apps with React',
+      url: 'http://github.com/facebook/react-native'
+    });
+
+   return res.send('Hello wylkerd');
 } );
 
 app.listen(3001);
