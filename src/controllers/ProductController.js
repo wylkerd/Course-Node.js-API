@@ -4,19 +4,16 @@ const Product = mongoose.model('Product');
 
 // exportando objeto com algumas funções
 module.exports = {
-    async insert(req, res) {
-        const insert = await Product.create({
-            title: 'Heloisy',
-            description: 'Minha irmã',
-            url: "####2"
-        })
-
-        return res.json(insert);
-    },
-    
     async index(req, res) {
-        const products = await Product.find();
+            const products = await Product.find();
 
-        return res.json(products);
+            return res.json(products);
+        },
+    async store(req, res) {
+        const product = await Product.create(req.body);
+
+        return res.json(product);
     },
+        
+        
 };
