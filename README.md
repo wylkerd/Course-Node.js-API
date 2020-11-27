@@ -41,3 +41,22 @@ npm install mongoose-paginate
 ```
 npm install cors
 ```
+#### Database connection with ORM mongoose 
+```
+npm install mongoose
+```
+#### Models Require
+```
+npm install require_dir
+```
+### Test Database mongo with ROBO 3T
+
+```
+docker ps
+```
+```
+docker ps -a
+```
+```
+docker start mongodb
+```
