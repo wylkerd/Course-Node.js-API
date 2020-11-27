@@ -49,7 +49,7 @@ npm install mongoose
 ```
 npm install require_dir
 ```
-### Test Database mongo with ROBO 3T
+### Database test with ROBO 3T
 
 ```
 docker ps
