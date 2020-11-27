@@ -37,7 +37,7 @@ docker run --name mongodb -p 27017:27017 -d mongo
 ```
 npm install mongoose-paginate
 ```
-#### Adding CORS (Acces by others domains
+#### Adding CORS (Acces by others domains)
 ```
 npm install cors
 ```
